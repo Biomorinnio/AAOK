@@ -1,0 +1,34 @@
+.about__content-img{
+    width: 245px;
+}
+.conf{
+    margin-top: 100px;
+    padding-top: 50px;
+}
+.conf__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conf__title{
+    margin-top: 30px;
+}
+.conf-gallery{
+    margin-top: 150px;
+}
+
+@media(max-width:768px){
+    .welcome__img{
+        width: 220px;
+    }
+    .welcome__btn{
+        margin-top: 90px;
+    }
+    .conf{
+        margin-top: 0px;
+        padding-top: 80px;
+    }
+    .conf-gallery{
+        margin-top: 80px;
+    }
+}
