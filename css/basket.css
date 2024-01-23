@@ -1,6 +1,7 @@
 
 .basket{
     margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 .basket__inner{
@@ -212,6 +213,7 @@ text-transform: uppercase;
 
 .request__form.basket{
     margin-top: 20px;
+    margin-bottom: 0;
     height: calc(100% - 55px);
 }
 
@@ -225,8 +227,8 @@ font-size: 16px;
 
 .basket__box{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 15px;
+    flex-direction: column;
     margin-bottom: 40px;
 }
 

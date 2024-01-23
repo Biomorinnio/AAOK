@@ -24,7 +24,7 @@ const swiperCreate = new Swiper('.swiper-create', {
 });
 const swiperGallery = new Swiper('.swiper-gallery', {
 
-  slidesPerView: 1.05,
+  slidesPerView: 1,
   spaceBetween: 17,
 
   navigation: {
@@ -32,27 +32,53 @@ const swiperGallery = new Swiper('.swiper-gallery', {
     prevEl: '.swiper-button-prev.gallery',
   },
 
+  pagination: {
+    el: '.swiper-pagination.gallery',
+    clickable: true,
+  },
+
   breakpoints: {
    
     769: {
       slidesPerView: 4,
       spaceBetween: 20,
+      slidesPerGroup: 4,
+      loop: true,
+  
     }
   }
 
 });
 
-const createBtns = document.querySelectorAll('.create__btn')
+const createBtns = document.querySelectorAll('.create__btn');
+const createLists = document.querySelectorAll('.create__list');
 
-for(let i of createBtns){
-  i.addEventListener('click', ()=>{
+const welcomeImg = document.querySelector('.welcome__img');
+const aboutImg = document.querySelector('.about__content-img')
+
+const mediaQuery = window.matchMedia('(max-width: 480px)').matches;
+
+for(let i = 0; i < createBtns.length; i++){
+  createBtns[i].addEventListener('click', ()=>{
     for(let i of createBtns) i.classList.remove('active')
-    i.classList.add('active')
+    createBtns[i].classList.add('active');
+
+    for(let i of createLists) i.classList.add('none')
+    createLists[i].classList.remove('none')
   })
 }
 
 
+const headerFixed = document.querySelector('.header.fixed');
 
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY > 150) headerFixed.classList.add('active');
+  else headerFixed.classList.remove('active');
+  
+  if(window.scrollY < 800) welcomeImg.style.bottom  = `-${window.scrollY/10}px`;
+  
+  if(window.scrollY < 1200) aboutImg.style.bottom = `-${window.scrollY/20}px`;
+})
 
 
 
@@ -69,14 +95,16 @@ function unblockScroll(){
   window.scrollTo(0, scrollY);
 }
 
-const burgerOpen = document.querySelector('.burger__menu-img');
+const burgerOpen = document.querySelectorAll('.burger__menu-img');
 const burgerMenu = document.querySelector('.burger__menu');
 const burgerClose = document.querySelector('.burger__menu-close');
 
-burgerOpen.addEventListener('click', ()=>{
-  burgerMenu.classList.add('active');
-  blockScroll();
-})
+for(let i of burgerOpen){
+  i.addEventListener('click', ()=>{
+    burgerMenu.classList.add('active');
+    blockScroll();
+  })
+}
 burgerClose.addEventListener('click', ()=>{
   burgerMenu.classList.remove('active')
   unblockScroll();
@@ -104,6 +132,40 @@ for(let i of burgerAnchors){
 
 
 
+
+
+const acc = document?.getElementsByClassName("accordion");
+
+acc[0].classList.add('active');
+if(window.matchMedia("(max-width: 768px)").matches){
+  acc[0].nextElementSibling.style.maxHeight = acc[0].nextElementSibling.scrollHeight+ 60 + "px";
+}
+else{
+  acc[0].nextElementSibling.style.maxHeight = acc[0].nextElementSibling.scrollHeight + "px";
+}
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+ 
+    for(let j of acc){
+      if(acc[i] != j){
+
+        j.classList.remove('active')
+        j.nextElementSibling.style.maxHeight = null
+      }
+    } 
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+new WOW().init();
+
 document.querySelectorAll('a[href^="#"').forEach(link => {
 
   link.addEventListener('click', function(e) {
@@ -121,28 +183,3 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
       });
   });
 });
-
-
-const acc = document?.getElementsByClassName("accordion");
-
-acc[0].classList.add('active');
-if(window.matchMedia("(max-width: 768px)").matches){
-  acc[0].nextElementSibling.style.maxHeight = acc[0].nextElementSibling.scrollHeight+20 + "px";
-}
-else{
-  acc[0].nextElementSibling.style.maxHeight = acc[0].nextElementSibling.scrollHeight + "px";
-}
-
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-
-new WOW().init();
