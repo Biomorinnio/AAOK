@@ -298,7 +298,7 @@ img.main__btn-img {
 .welcome__title {
   text-align: center;
   font-size: 100px;
-  font-weight: 600;
+  font-weight: 550;
   line-height: 100%;
   max-width: 1074px;
   text-transform: uppercase;
@@ -554,6 +554,7 @@ strong {
 
 .swiper-create-img {
   width: 100%;
+  border-radius: 4px;
 }
 
 .swiper-create-link {
@@ -633,7 +634,7 @@ strong {
 .swiper-price-new {
   color: var(--dark, #1e1e21);
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 550;
   line-height: 140%; /* 33.6px */
 }
 
@@ -799,6 +800,7 @@ strong {
   margin-bottom: 30px;
   max-width: 680px;
   text-transform: lowercase;
+  font-weight: 550;
 }
 
 .gallery__title-link {
@@ -858,6 +860,7 @@ strong {
 .swiper-gallery-img {
   height: 100%;
   width: 100%;
+  border-radius: 5px;
 }
 
 .how {
@@ -1007,6 +1010,7 @@ strong {
 
 .contact__title {
   margin: 30px 0 60px;
+  color: #141414;
 }
 
 .contact__list {
@@ -1051,7 +1055,7 @@ strong {
 }
 
 .request__content {
-  margin-bottom: -4px;
+  margin-bottom: -7px;
 }
 
 .request__content-img {
@@ -1401,7 +1405,7 @@ textarea:focus {
   }
   h2 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 550;
     line-height: 140%; /* 33.6px */
   }
   .about__text {

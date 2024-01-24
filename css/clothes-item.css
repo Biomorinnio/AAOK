@@ -51,6 +51,7 @@
 
 .conf__item-img{
     width: 100%;
+    border-radius: 5px;
 }
 
 @media(max-width:768px){
