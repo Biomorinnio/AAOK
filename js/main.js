@@ -132,6 +132,25 @@ for(let i of burgerAnchors){
 
 
 
+new WOW().init();
+
+document.querySelectorAll('a[href^="#"').forEach(link => {
+
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      let href = this.getAttribute('href').substring(1);
+      console.log(document.getElementById(href))
+      const scrollTarget = document.getElementById(href);
+
+      const offsetPosition = scrollTarget.getBoundingClientRect().top;
+
+      window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth'
+      });
+  });
+});
 
 
 const acc = document?.getElementsByClassName("accordion");
@@ -164,22 +183,3 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
-new WOW().init();
-
-document.querySelectorAll('a[href^="#"').forEach(link => {
-
-  link.addEventListener('click', function(e) {
-      e.preventDefault();
-
-      let href = this.getAttribute('href').substring(1);
-      console.log(document.getElementById(href))
-      const scrollTarget = document.getElementById(href);
-
-      const offsetPosition = scrollTarget.getBoundingClientRect().top;
-
-      window.scrollBy({
-          top: offsetPosition,
-          behavior: 'smooth'
-      });
-  });
-});
