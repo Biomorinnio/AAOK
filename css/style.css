@@ -1,5 +1,13 @@
 @import url("../fonts/CirceRounded/stylesheet.css");
 
+body::before {
+  content: url("../img/welcome__img.webp");
+  position: absolute;
+  top: -9999rem;
+  left: -9999rem;
+  opacity: 0;
+}
+
 html {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
