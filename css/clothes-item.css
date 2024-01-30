@@ -1,5 +1,14 @@
 .welcome__inner {
-  padding-bottom: 25px;
+  padding-bottom: 60px;
+}
+
+h2{
+  font-size: 32px;
+}
+
+.welcome__img{
+  transform: translate(-50%, 0%) scale(-1, 1);
+  margin-bottom: 0px;
 }
 
 .circle {
