@@ -26,7 +26,6 @@
     <title>One Of A Kind - casual clothes online configurator</title>
 
 
-    <link rel="prefetch" href="img/welcome__img.png" />
     <link
       rel="stylesheet"
       media="print"
@@ -57,10 +56,14 @@
       href="fonts/CirceRounded/stylesheet.css"
       type="text/css"
     />
+    
+    <link rel="preload" href="img/welcome__img.png" as="image">
   </head>
   <body>
 
- 
+    <div style="width:1px; height:1px; visibility:hidden; overflow:hidden">
+      <img src="img/welcome__img.png" />
+  </div>
 
     <div id="shadow"></div>
 
