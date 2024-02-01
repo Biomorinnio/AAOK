@@ -57,7 +57,18 @@
       type="text/css"
     />
     
-    <link rel="preload" href="img/welcome__img.png" as="image">
+    <link rel="prefetch" href="img/welcome__img.webp" />
+    <link rel="preload" href="img/welcome__img.webp" as="image">
+    <link rel="prefetch" href="img/welcome__img.webp">
+
+    <script>
+      function preloadImage(url){
+            var img=new Image();
+            img.src=url;
+      }
+  
+      preloadImage('img/welcome__img.webp')
+    </script>
   </head>
   <body>
 
@@ -536,7 +547,7 @@
               </svg>
             </a>
           </button>
-          <img src="img/welcome__img.png" alt="" class="welcome__img" />
+          <img src="img/welcome__img.webp" alt="" class="welcome__img" />
         </div>
       </section>
 
