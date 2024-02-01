@@ -40,6 +40,15 @@
     />
 
     <link rel="preload" href="img/welcome__img-hoodie.png" as="image">
+    <link rel="prefetch" href="img/welcome__img-hoodie.png">
+    <script>
+      function preloadImage(url){
+            var img=new Image();
+            img.src=url;
+      }
+  
+      preloadImage('img/welcome__img-hoodie.png')
+      </script>
 
   </head>
   <body>
@@ -1031,7 +1040,7 @@
       </div>
     </footer>
 
-
+  
     <script src="js/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
