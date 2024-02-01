@@ -58,7 +58,8 @@
     />
     
 
-
+    <link rel="preload" href="img/welcome__img.webp" as="image">
+    <link rel="prefetch" href="img/welcome__img.webp">
     <script>  
       function preloadImage(url){
             var img=new Image();
@@ -70,7 +71,10 @@
   </head>
   <body>
 
-  
+    <div style="width:1px; height:1px; visibility:hidden; overflow:hidden">
+      <img src="img/welcome__img.webp" />
+    </div>
+
     <div id="shadow"></div>
 
     <div class="marquee">
