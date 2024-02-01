@@ -1,5 +1,5 @@
 .welcome__inner {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 h2{
@@ -7,8 +7,10 @@ h2{
 }
 
 .welcome__img{
-  transform: translate(-50%, 0%) scale(-1, 1);
-  margin-bottom: 0px;
+  transform: translate(-50%, 0%);
+  margin-bottom: -150px;
+  margin-left: 20px;
+  width: 272px;
 }
 
 .circle {
@@ -34,8 +36,16 @@ h2{
 }
 
 .about__content-img {
-  width: 245px;
+  width: 295px;
 }
+
+.about__descr{
+  margin-left: 60px;
+}
+.about__inner{
+  padding-top: 50px;
+}
+
 .conf {
   margin-top: 100px;
   padding-top: 50px;
@@ -52,8 +62,9 @@ h2{
   margin-top: 150px;
 }
 .conf__list {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(4, 24.2%);
   gap: 10px;
 }
 
@@ -62,19 +73,34 @@ h2{
   border-radius: 5px;
 }
 
+
+
 @media (max-width: 768px) {
   .welcome__img {
     width: 220px;
+    margin-bottom: -82px;
   }
   .welcome__btn {
     margin-top: 90px;
   }
+  
   .conf {
     margin-top: 0px;
     padding-top: 80px;
   }
   .conf-gallery {
     margin-top: 80px;
+  }
+  .welcome__btn{
+    margin-top: 200px
+  }
+  .welcome__icon2{
+    top: 10px;
+    right: 20px;
+  }
+  .welcome__icon1{
+    margin-top: 100px;
+    bottom: 250px;
   }
   .welcome__inner {
     padding-bottom: 90px;
@@ -87,9 +113,19 @@ h2{
     max-width: unset;
   }
   .about__inner {
-    padding-bottom: 367px;
+    padding-bottom: 430px;
   }
   .conf__list {
     display: none;
+  }
+  .about__descr{
+    margin-left: 0px;
+  }
+  .create__list{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+  }
+  .swiper-create-img{
+    width: 175px;
   }
 }

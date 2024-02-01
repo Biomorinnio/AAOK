@@ -39,53 +39,18 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <link rel="preload" href="img/welcome__img-hoodie.png" as="image">
+
   </head>
   <body>
+
+    <div style="width:1px; height:1px; visibility:hidden; overflow:hidden">
+      <img src="img/welcome__img-hoodie.png" />
+    </div>
 
     <div id="shadow">
 
     </div>
-
-    <!-- <div id="overlay">
-      <div id="popup">
-        <form action="" class="popup__form">
-          <img class="popup__form-img" src="img/close__form.svg" alt="иконка закрыть форму">
-          <h3 class="popup__form-title">
-            Нужно рассчитать заказ?
-          </h3>
-          <h5 class="popup__form-subtitle">
-            Оставьте свои данные, мы с вами свяжемся :)
-          </h5>
-          <label for="form__name"></label>
-          <input type="text" name="form__name" class="popup__form-input" placeholder="Имя">
-          <label for="form__tel"></label>
-          <input type="number" name="form__tel" class="popup__form-input" placeholder="+7">
-          <label for="form__mail"></label>
-          <input type="email" name="form__mail" class="popup__form-input" placeholder="email">
-          <div class="popup__form-select">
-            <select name="numbers" class="popup__select">
-              <option value="">Кол-во штук</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-     
-            </select>
-            <svg class="popup__select-icon" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-              <path d="M8.61251 0H4.45918H0.719181C0.0791812 0 -0.240819 0.773333 0.212515 1.22667L3.66585 4.68C4.21918 5.23333 5.11918 5.23333 5.67251 4.68L6.98585 3.36667L9.12585 1.22667C9.57252 0.773333 9.25251 0 8.61251 0Z" fill="#111112"/>
-            </svg>
-          </div>
-          <button class="popup__form-btn">
-            Отправить
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.4297 5.93005L20.4997 12.0001L14.4297 18.0701" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M3.5 12H20.33" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-              
-          </button>
-        </form>
-      </div>
-    </div> -->
 
     <div class="marquee">
       <div class="track">
@@ -360,27 +325,29 @@
       <section class="welcome">
         <div class="container welcome__inner">
           <button class="main__btn wow animate__animated animate__fadeIn" data-wow-delay="0.5s" data-wow-duration="1.8s">
-            <a href="#" class="main__btn-link">
+            <a href="#createItem" class="main__btn-link">
               <img class="main__btn-img" src="img/main__btn-img.svg" alt="">
-              configurator
+              hoodie
             </a>
           </button>
           <img src="img/welcome__star1.svg" alt="" class="welcome__icon1">
           <img src="img/welcome__star2.svg" alt="" class="welcome__icon2">
           <h1 class="welcome__title">Create your own Hoodie</h1>
           <button class="welcome__btn">
-            <a href="#create" class="welcome__link">
+            <a href="#createItem" class="welcome__link">
               Сreate
               <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                 <circle cx="50" cy="50" r="49.5" stroke="#1E1E21" stroke-dasharray="6 6"/>
               </svg>
             </a>
           </button>
-          <img src="img/about__content.webp" alt="" class="welcome__img">
+          <img src="img/welcome__img-hoodie.png" alt="" class="welcome__img">
         </div>
       </section>
 
       <section class="about" id="about">
+      
+      
         <div class="container about__inner">
           <div class="about__content">
             <img src="img/welcome__img.webp" alt="" class="about__content-img">
@@ -398,12 +365,12 @@
             <p class="about__text">ONE-OF-A-KIND is a technologically complex project in the fashion industry. We sew 100% of our products to order. Now shipping to: EU, UK and USA and Canada</p>
             <ul class="about__list">
               <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s"><div class="circle">11</div><span class="about__item-text">Colors to<br/> choose from</span></li>
-              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="0.8s" data-wow-duration="1s"><div class="circle">40K</div><span class="about__item-text">Product configurations</span></li>
+              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="0.8s" data-wow-duration="1s"><div class="circle">40K</div><span class="about__item-text">Оf product configurations</span></li>
               <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="1.1s" data-wow-duration="1s"><div class="circle">11</div><span class="about__item-text">Sizes ranging from XS to 7XL </span></li>
             
-              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s"><img src="img/about__descr-1.svg" alt="" class="about__item-img"><span class="about__item-text"><strong>FREE DELIVERY</strong></span></li>
-              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="0.8s" data-wow-duration="1s"><img src="img/about__descr-2.svg" alt="" class="about__item-img"><span class="about__item-text"><strong>FREE</strong> express delivery on 2 or more items</span></li>
-              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="1.1s" data-wow-duration="1s"><img src="img/about__descr-3.svg" alt="" class="about__item-img"><span class="about__item-text">100% satisfaction guarantee </span></li>
+              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s"><img src="img/about__descr-1.svg" alt="" class="about__item-img"><span class="about__item-text"><strong>FREE</strong> express delivery on 2 or more items</span></li>
+              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="0.8s" data-wow-duration="1s"><img src="img/about__descr-2.svg" alt="" class="about__item-img"><span class="about__item-text">Flat rate delivery<br/> EU- €14, USA - €24</span></li>
+              <li class="about__item wow animate__animated animate__fadeInRight" data-wow-delay="1.1s" data-wow-duration="1s"><img src="img/about__descr-3.svg" alt="" class="about__item-img"><span class="about__item-text">100% satisfaction guaranteed </span></li>
             </ul>
           
           </div>
