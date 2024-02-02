@@ -1,5 +1,5 @@
 .welcome__inner {
-  padding-bottom: 90px;
+  padding-bottom: 80px;
 }
 
 h2{
@@ -8,11 +8,10 @@ h2{
 
 .welcome__img{
   transform: translate(-50%, 0%);
-  margin-bottom: -130px;
-  margin-left: 0px;
-  width: 450px;
+  margin-bottom: -150px;
+  margin-left: 20px;
+  width: 272px;
 }
-
 
 .circle {
   background: #fff;
@@ -62,6 +61,9 @@ h2{
 .conf-gallery {
   margin-top: 150px;
 }
+.gallery .container{
+  padding: 0 19px;
+}
 .conf__list {
   display: grid;
   align-items: center;
@@ -72,6 +74,7 @@ h2{
 .conf__item-img {
   width: 100%;
   border-radius: 5px;
+  max-height: 370px;
 }
 
 

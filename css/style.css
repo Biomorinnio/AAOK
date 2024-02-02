@@ -693,6 +693,9 @@ strong {
   margin-top: -44px;
   margin-bottom: -4px;
 }
+.catalog__item:nth-child(2) .catalog__item-img{
+  width: 280px;
+}
 
 .gift {
   margin: 150px 0 0px;
@@ -1049,6 +1052,7 @@ strong {
   align-items: center;
   overflow: visible;
   justify-content: center;
+
 }
 
 .request__form {
@@ -1067,6 +1071,9 @@ strong {
 
 .request__content-img {
   margin-top: -75px;
+  width: 100%;
+  height: 420px;
+
 }
 
 .request__form-input {
@@ -1616,6 +1623,7 @@ textarea:focus {
   }
   .request__content-img {
     width: 278px;
+    height: unset;
   }
   .request__form {
     min-width: unset;
@@ -1868,7 +1876,7 @@ textarea:focus {
   }
 
   .about__content-img {
-    width: 200px;
+    width: 228px;
     position: absolute;
     bottom: 0px;
     left: 50%;
