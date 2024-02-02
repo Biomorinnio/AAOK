@@ -1,5 +1,5 @@
 .welcome__inner {
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 }
 
 h2{
@@ -8,10 +8,11 @@ h2{
 
 .welcome__img{
   transform: translate(-50%, 0%);
-  margin-bottom: -150px;
-  margin-left: 20px;
-  width: 272px;
+  margin-bottom: -130px;
+  margin-left: 0px;
+  width: 450px;
 }
+
 
 .circle {
   background: #fff;
