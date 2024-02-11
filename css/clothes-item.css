@@ -37,6 +37,7 @@ h2{
 
 .about__content-img {
   width: 295px;
+  transform: unset;
 }
 
 .about__descr{
@@ -59,10 +60,23 @@ h2{
   margin-top: 30px;
 }
 .conf-gallery {
-  margin-top: 150px;
+  margin-top: 92px;
+}
+.catalog{
+  padding-top: 134px;
+  margin-bottom: 125px;
 }
 .gallery .container{
   padding: 0 19px;
+}
+.gallery{
+  margin-top: 163px;
+}
+.faq__title{
+  margin-bottom: 31px;
+}
+.accordion{
+  margin-bottom: 31px;
 }
 .conf__list {
   display: grid;
@@ -75,6 +89,13 @@ h2{
   width: 100%;
   border-radius: 5px;
   max-height: 370px;
+  min-height: 370px;
+}
+.contact{
+  padding-top: 127px;
+}
+.contact__title{
+  margin-bottom: 39px;
 }
 
 
@@ -109,6 +130,9 @@ h2{
   .welcome__inner {
     padding-bottom: 90px;
   }
+  .about__content-img{
+    left: 10px;
+  }
   .about__list {
     display: flex;
     flex-direction: column;
@@ -116,9 +140,10 @@ h2{
   .about__item-text {
     max-width: unset;
   }
-  .about__inner {
-    padding-bottom: 430px;
+  .about__item-text{
+    max-width: 200px;
   }
+  
   .conf__list {
     display: none;
   }
@@ -131,5 +156,19 @@ h2{
   }
   .swiper-create-img{
     width: 175px;
+  }
+}
+
+@media(max-width:480px){
+  .about__inner{
+    padding-bottom: 430px;
+  }
+  .about__content{
+    margin-top: 20px;
+  }
+  .about__content-img{
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
