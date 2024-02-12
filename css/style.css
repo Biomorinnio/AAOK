@@ -1431,8 +1431,9 @@ textarea:focus {
     width: 200px;
   }
   .welcome__btn {
-    margin-top: 110px;
-  }
+    margin-top: 180px;
+    margin-bottom: -78px;
+}
   .about__inner {
     flex-direction: column-reverse;
   }
@@ -1888,7 +1889,7 @@ textarea:focus {
     border-bottom: 0px;
   }
   .welcome__img {
-    width: 211px;
+    width: 240px;
   }
 
   .header .logo {
@@ -1916,7 +1917,7 @@ textarea:focus {
 
   .welcome__inner {
     padding-top: 20px;
-    padding-bottom: 110px;
+    padding-bottom: 166px;
   }
   h2 {
     font-size: 26px;
